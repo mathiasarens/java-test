@@ -3,8 +3,8 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class DeciBinaryNumbers {
-    static final int LIMIT_D = 19;
-    static final int LIMIT_S = 300000;
+    static final int LIMIT_D = 5;
+    static final int LIMIT_S = 100;
 
     static long[][] f;
     static long[] c;
@@ -13,16 +13,18 @@ public class DeciBinaryNumbers {
         buildF();
         buildC();
 
-        Scanner sc = new Scanner(System.in);
+//        Scanner sc = new Scanner(System.in);
+//
+//        int q = sc.nextInt();
+//        for (int tc = 0; tc < q; tc++) {
+//            long x = sc.nextLong();
+//
+//            System.out.println(solve(x));
+//        }
+//
+//        sc.close();
+        System.out.println(solve(32));
 
-        int q = sc.nextInt();
-        for (int tc = 0; tc < q; tc++) {
-            long x = sc.nextLong();
-
-            System.out.println(solve(x));
-        }
-
-        sc.close();
     }
 
     static BigInteger solve(long x) {
